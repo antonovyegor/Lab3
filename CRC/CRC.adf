@@ -42,3 +42,9 @@ Active_lib=
 [Files.Data]
 .\src\MAIN.vhd=VHDL Source Code
 
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=crc|BEH|0 
+ShowHide=ShowTopLevel
+Selected=

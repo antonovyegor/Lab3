@@ -2933,3 +2933,212 @@ run 100 ns
 # KERNEL: stopped at time: 9700 ns
 endsim
 #  Simulation has been stopped
+acom -O3 -work CRC -2002  $dsn/src/MAIN.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\My_Designs\Lab3\CRC\src\MAIN.vhd
+# Compile Entity "CRC"
+# Compile Architecture "BEH" of Entity "CRC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+CRC CRC BEH
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7160 kB (elbread=1023 elab2=5981 kernel=154 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\Lab3\CRC\src\wave.asdb
+# force -freeze /CRC/INPUT 0
+#  14:13, 1 квітня 2019 р.
+#  Simulation has been initialized
+#  Selected Top-Level: CRC (BEH)
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/Lab3/CRC/src/wave.asdb'.
+# 7 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+endsim
+#  Simulation has been stopped
+acom -O3 -work CRC -2002  $dsn/src/MAIN.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\My_Designs\Lab3\CRC\src\MAIN.vhd
+# Compile Entity "CRC"
+# Compile Architecture "BEH" of Entity "CRC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+CRC CRC BEH
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7160 kB (elbread=1023 elab2=5981 kernel=154 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\Lab3\CRC\src\wave.asdb
+# force -freeze /CRC/INPUT 0
+#  14:16, 1 квітня 2019 р.
+#  Simulation has been initialized
+#  Selected Top-Level: CRC (BEH)
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/Lab3/CRC/src/wave.asdb'.
+# 7 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/C' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/INPUT' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/R' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/st' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/COUNT' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/MAX' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/M' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/C' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/INPUT' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/R' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/st' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/COUNT' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/MAX' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/CRC/M' has already been traced.
+# 0 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
+run 100 ns
+# KERNEL: stopped at time: 4900 ns
+run 100 ns
+# KERNEL: stopped at time: 5 us
+run 100 ns
+# KERNEL: stopped at time: 5100 ns
+run 100 ns
+# KERNEL: stopped at time: 5200 ns
+run 100 ns
+# KERNEL: stopped at time: 5300 ns
+endsim
+#  Simulation has been stopped
+acom -O3 -work CRC -2002  $dsn/src/MAIN.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: d:\My_Designs\Lab3\CRC\src\MAIN.vhd
+# Compile Entity "CRC"
+# Compile Architecture "BEH" of Entity "CRC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim -O5 +access +r +m+CRC CRC BEH
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7160 kB (elbread=1023 elab2=5981 kernel=154 sdf=0)
+# KERNEL: ASDB file was created in location d:\My_Designs\Lab3\CRC\src\wave.asdb
+# force -freeze /CRC/INPUT 0
+#  14:20, 1 квітня 2019 р.
+#  Simulation has been initialized
+#  Selected Top-Level: CRC (BEH)
+# Waveform file 'untitled.awc' connected to 'd:/My_Designs/Lab3/CRC/src/wave.asdb'.
+# 7 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
+run 100 ns
+# KERNEL: stopped at time: 4900 ns
+run 100 ns
+# KERNEL: stopped at time: 5 us
+run 100 ns
+# KERNEL: stopped at time: 5100 ns
+run 100 ns
+# KERNEL: stopped at time: 5200 ns
+run 100 ns
+# KERNEL: stopped at time: 5300 ns
+run 1000 ns
+# KERNEL: stopped at time: 6300 ns
+run 1000 ns
+# KERNEL: stopped at time: 7300 ns
+run 1000 ns
+# KERNEL: stopped at time: 8300 ns
+run 1000 ns
+# KERNEL: stopped at time: 9300 ns
+run 100 ns
+# KERNEL: stopped at time: 9400 ns
+run 100 ns
+# KERNEL: stopped at time: 9500 ns
+run 100 ns
+# KERNEL: stopped at time: 9600 ns
+run 100 ns
+# KERNEL: stopped at time: 9700 ns
+#  Simulation has been stopped
