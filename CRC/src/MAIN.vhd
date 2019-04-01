@@ -33,7 +33,7 @@ begin
 				R(0)<=M(COUNT);
 				COUNT<=COUNT+1;
 			end if;
-
+			   --
 			if xor_signal = '1' then
 				R<= R xor X"8005";
 				--R<= R xor X"5";
