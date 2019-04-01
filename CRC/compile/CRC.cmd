@@ -1,0 +1,1 @@
+-w -s "d:\My_Designs\Lab3\library.cfg"  -j "d:\My_Designs\Lab3\CRC\projlib.cfg"  -d "d:\My_Designs\Lab3\CRC\compile"   -work CRC  -O3 -e 100 -2002 "d:/My_Designs/Lab3/CRC/src/MAIN.vhd"
