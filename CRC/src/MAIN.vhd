@@ -12,61 +12,53 @@ entity CRC is
 end entity;
 
 architecture BEH of CRC is
-signal R : std_logic_vector(15 downto 0):= X"0000";
---signal R : std_logic_vector(3 downto 0):= X"0";
+	signal R : std_logic_vector(15 downto 0):= X"0000";
 	type STATE is (st1,st2,st3);
 	signal st : STATE := st1;
-	signal shl_signal : std_logic;
-	signal xor_signal : std_logic;
+	--signal shl_signal : std_logic;
+	--signal xor_signal : std_logic;
 	signal COUNT : integer :=0;
-	signal M : std_logic_vector(0 to 47):=X"9B0E2C67B5B7"  ;
-	--signal M : std_logic_vector(0 to 11):=X"D70"  ;
-begin
+	signal M : std_logic_vector(0 to 47):=X"9B0E2C670000"  ;
+	begin
 
 	CRC: process (C)
 
 	begin
 		if C'event and C='1' then
-			if shl_signal='1' then
+			if st=st1 then
 				R(15 downto 1)<=R(14 downto 0);
-				--R(3 downto 1)<=R(2 downto 0);
-				R(0)<=M(COUNT);
+				R(15)<=R(15) xor R(14);
+				R(2)<=R(1) xor R(15);
+				R(0)<= R(15) xor M(COUNT);
 				COUNT<=COUNT+1;
 			end if;
-			   --
-			if xor_signal = '1' then
-				R<= R xor X"8005";
-				--R<= R xor X"5";
+			if st=st2 then
+				M(47-15 to 47)<=R;
+				COUNT<=0;
+				M(45)<= not M(45);
+				R<=X"0000";
 			end if;
-	    end if;
+
+		end if;
 	end process;
 
 
 
-PROCESS (st,R,COUNT,C)
+	PROCESS (st,R,COUNT,C)
 BEGIN
-	if C'event and C='1' then
+	if C'event  then
 	CASE st IS
 		WHEN st1 =>
-			if COUNT > 32+16 then st<=st3;
+		if COUNT = 48 then
+			st<=st2;
+		else st<=st1;
 			end if;
-
-			IF R(15) = '1'
-			--IF R(3) = '1'
-				THEN st <= st2;
-			ELSE
-				st <= st1;
-			END IF;
 		WHEN st2 =>
-			IF COUNT > 32+16
-				THEN st <= st3;
-				ELSE st <= st1;
-			END IF;
+			st <= st1;
 		when others => st<=st3;
 
 	END CASE;
 	end if;
 END PROCESS;
-   shl_signal <='1' when st=st1 else '0' ;
-   xor_signal <='1' when st=st2 else '0'  ;
+
 end BEH;
