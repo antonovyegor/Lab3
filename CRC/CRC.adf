@@ -45,6 +45,6 @@ Active_lib=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=crc|BEH|0   
+HierarchyInformation=crc|BEH|0    
 ShowHide=ShowTopLevel
 Selected=

@@ -1564,7 +1564,7 @@ I 000044 55 1765          1554117404898 BEH
 	)
 	(_model . BEH 2 -1)
 )
-V 000044 55 1765          1554117621858 BEH
+I 000044 55 1765          1554117621858 BEH
 (_unit VHDL (crc 0 6(beh 0 14))
 	(_version vc1)
 	(_time 1554117621859 2019.04.01 14:20:21)
@@ -1601,4 +1601,43 @@ V 000044 55 1765          1554117621858 BEH
 		(33686018 33686018 33686018 33686018)
 	)
 	(_model . BEH 2 -1)
+)
+V 000044 55 1830          1554314679685 BEH
+(_unit VHDL (crc 0 6(beh 0 14))
+	(_version vc1)
+	(_time 1554314679686 2019.04.03 21:04:39)
+	(_source (\./../src/MAIN.vhd\))
+	(_code d285d281d28585c4d5d1c08880d4d1d5d0d4d1d4d1)
+	(_entity
+		(_time 1554106692324)
+	)
+	(_object
+		(_port (_int C ~extieee.std_logic_1164.STD_LOGIC 0 8(_entity(_in)(_event))))
+		(_port (_int INPUT ~extieee.std_logic_1164.STD_LOGIC 0 9(_entity(_in))))
+		(_type (_int STATE 0 16(_enum1 st1 st2 st3 (_to i 0 i 2))))
+		(_signal (_int st STATE 0 17(_architecture(_uni((i 0))))))
+		(_signal (_int N ~extstd.standard.INTEGER 0 18(_architecture(_uni((i 16))))))
+		(_signal (_int COUNT ~extstd.standard.INTEGER 0 19(_architecture(_uni((i 0))))))
+		(_signal (_int MAX ~extstd.standard.INTEGER 0 20(_architecture(_uni(_code 2)))))
+		(_type (_int ~STD_LOGIC_VECTOR{N-1~downto~0}~13 0 21(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto c 3 i 0)))))
+		(_signal (_int R ~STD_LOGIC_VECTOR{N-1~downto~0}~13 0 21(_architecture(_uni(_code 4)))))
+		(_type (_int ~STD_LOGIC_VECTOR{0~to~47}~13 0 22(_array ~extieee.std_logic_1164.STD_LOGIC ((_to i 0 i 47)))))
+		(_signal (_int M ~STD_LOGIC_VECTOR{0~to~47}~13 0 22(_architecture(_uni(_string \"100110110000111000101100011001110000000000000000"\)))))
+		(_process
+			(CRC(_architecture 0 0 25(_process (_simple)(_target(4)(6)(6(0))(6(2))(6(15))(6(d_15_1))(7))(_sensitivity(0))(_read(2)(3)(4)(5)(6)(7)))))
+			(line__52(_architecture 1 0 52(_process (_simple)(_target(2))(_sensitivity(2)(4)(6)(0))(_read(5)))))
+		)
+		(_subprogram
+			(_ext resolved (0 15))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+		(_type (_ext ~extstd.standard.INTEGER (1 INTEGER)))
+	)
+	(_split (7)
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(std_logic_arith)))
+	(_static
+		(33686018 33686018 33686018 33686018)
+	)
+	(_model . BEH 5 -1)
 )

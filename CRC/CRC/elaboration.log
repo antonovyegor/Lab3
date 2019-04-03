@@ -1,4 +1,4 @@
-Active-HDL 10.1.3088.5434  2019-04-03 20:52:18
+Active-HDL 10.1.3088.5434  2019-04-03 21:04:42
 
 Elaboration top modules:
 Architecture                  BEH(CRC)
@@ -26,3 +26,7 @@ crc                     | None
 ieee                    | Standard IEEE packages library
 std                     | Standard VHDL library
 ---------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+CRC CRC BEH
+
